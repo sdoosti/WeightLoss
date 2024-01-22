@@ -87,16 +87,16 @@ def save_data(response,terms):
 def get_creators_by_term(theme):
     post_data = make_post_data(theme)
     creator_response = api('/v3/creator.search', post_data)
-    save_data(creator_response, theme
+    save_data(creator_response, theme)
 
 Terms = [
     "Physical Exercise",
     "Physical Fitness",
-    "Gymnasium",
     "Wellness",
-    "Strength Training",
     "Diet",
     "Weight Loss",
+    "Obesity",
+    "Nutrition",
 ]
 
 get_creators_by_term(Terms)
