@@ -17,7 +17,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 PATH = os.path.abspath(__file__)
 parent_path = os.path.dirname(os.path.dirname(os.path.dirname((PATH))))
-api_path = os.path.join(parent_path, "api.key")
+#api_path = os.path.join(parent_path, "api.key")
+api_path = os.path.join(r"C:\Users\doosti\Dropbox (Chapman)\Research\Research Projects\Fitness", "api2.key")
 
 with open(api_path,"r") as f:
     API_KEY = f.readline().rstrip()
